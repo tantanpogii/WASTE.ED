@@ -73,29 +73,8 @@ gsap.fromTo(".slide-in", {
     duration: 1,
 })
 
-const images = [
-    "assets/images/home/hiking1.jpg",
-    "assets/images/home/hiking2.jpg",
-    "assets/images/home/hiking3.jpg",
-    "assets/images/home/hiking4.jpg",
-]
 
-function addSlideShowImages(img) {
 
-    const imageContainer = document.createElement("div")
-
-    imageContainer.classList.add("swiper-slide", "slide", "tw-rounded-md", "!tw-h-[450px]")
-
-    imageContainer.innerHTML += `
-                <img src="${img}" 
-                        alt="hiking"
-                        class="tw-object-cover tw-w-full tw-h-full">
-    `
-    slideShowContainer.prepend(imageContainer)
-
-}
-
-images.forEach(img => addSlideShowImages(img))
 
 const wasteTypes = [
     "Plastic Waste", "Electronic Waste", "Organic Waste", "Glass Waste", 
